@@ -43,8 +43,8 @@ function App() {
 
   return (
     <>
-      <div className="mx-4">
-        <h1 className="text-start mt-4">Lista Colaboradores</h1>
+      <div className="mx-4" >
+        <h1 className="text-start mt-4 " style={{ backgroundColor: 'rgb(213, 233, 195)' }}>Lista Colaboradores</h1>
         <Row>
           <Col sm={4}></Col>
           <Buscador search={search} onChange={handleChange} />
@@ -53,7 +53,7 @@ function App() {
           <Col sm={12} md={9}>
             <Listado colaboradores = {colaboradoresFiltrados}/>
             </Col>
-          <Col md={3} className="">
+          <Col md={3} className="" style={{ backgroundColor: 'rgb(213, 233, 195)' }}>
             <h2>Agregar Colaborador</h2>
             <Formulario onSubmit = {handleSubmit} setAlert={setAlert}/>
             {alert.msg && <Alert color={alert.color}>{alert.msg}</Alert>}

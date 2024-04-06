@@ -7,7 +7,7 @@ const Listado = ({ colaboradores }) => {
       <Table striped bordered hover>
         <thead>
           <tr>
-            <th>nombre</th>
+            <th>Nombre</th>
             <th>Correo</th>
             <th>Edad</th>
             <th>Cargo</th>
